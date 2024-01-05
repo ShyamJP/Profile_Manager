@@ -1,6 +1,7 @@
 const mongoose  = require("mongoose");
+const env = require('dotenv').config()
 
-mongoose.connect('mongodb+srv://shyamjpankhaniya05:ieryYEYlskbACNwt@users.if2gyur.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(process.env.DB_URL)
 .then(res => {console.log("Database Connected Successfuly")})
 .catch(err => {console.log(err)})
 const schema = mongoose.Schema({
