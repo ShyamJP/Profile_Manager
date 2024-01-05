@@ -1,0 +1,75 @@
+.form-div{
+    display: grid;
+    place-items: center;
+
+}
+.form{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    box-shadow: 0px 0px 10px gray;
+    background-color: lightblue;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 8px black;
+}
+
+.form input{
+    height: 1.5rem;
+    width: 20rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 6px black;
+    padding: 0.4rem;
+}
+
+.form label{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.form button{
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 21.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem; 
+    transition: 0.6s;
+    font-weight: 900;
+    padding: 0.4rem;
+}
+.form button:hover{
+    box-shadow: 5px 8px black;  
+    background-color: white;
+    color: black;
+}
+.form-error{
+    color: red;
+}
+
+.home-main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.home-main button{
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 10.2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem; 
+    transition: 0.6s;
+    font-weight: 900;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+}
+.home-main button:hover{
+    box-shadow: 5px 8px black;  
+    background-color: white;
+    color: black;
+}
