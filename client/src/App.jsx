@@ -5,6 +5,9 @@ import User from './Components/User/user'
 import Home from './Components/Home/Home'
 import Login from './Components/Login/login'
 import Profile from './Components/UserProfile/profile'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import UpdateForm from './Components/UpdateForm/Form'
+
 function App() {
 
 
@@ -17,6 +20,7 @@ function App() {
           <Route path='/' element={<Home/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/profile/:id' element={<Profile />}></Route>
+          <Route path='/profile/update/:id' element={<UpdateForm />}></Route>
         </Routes>
       </BrowserRouter>
 
