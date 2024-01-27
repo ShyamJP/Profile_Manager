@@ -25,16 +25,16 @@ Before running the application, ensure you have the following installed:
 ### Clone the Repository:
 
 #### bash
-```git clone https://github.com/your-username/profile-manager-mern.git```
+```
+git clone https://github.com/your-username/profile-manager-mern.git
+```
 
 ### Navigate to the Project Directory:
+```
+cd profile-manager
+```
 
-#### bash
-
-```cd profile-manager```
 ### Install Dependencies:
-
-#### bash
 
 #### Install server dependencies
 ``` 
@@ -54,16 +54,17 @@ Start MongoDB server:
 Create a .env file in the server directory and add the following configuration Based on .env.example
 
 Run the Application:
-
 ### Start the server:
 From the 'server' directory
-```npm start```
+```
+npm start
+```
 
 ### Start the client:
-
-
-# From the 'client' directory
-```npm run dev```
+From the 'client' directory
+```
+npm run dev
+```
 Open your browser and navigate to http://127.0.0.1:5173 to view the application.
 
 
