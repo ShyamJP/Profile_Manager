@@ -29,8 +29,14 @@ const upload = multer({ storage: storage });
 let imgname;
 app.post("/upload", upload.single("file"), async (req, res) => {
   await console.log(req.body);
-  console.log("image url recieved");
   imgname = req.file.filename;
+  console.log("image url recieved : " , imgname );
+  if(imgname != null){
+    res.json('image Uploaded success fully')
+  } 
+  else{
+    res.json('image is not Uploaded')
+  } 
 });
 
 app.post("/send", async (req, res) => {
@@ -83,6 +89,14 @@ app.get("/profile/:id", async (req, res) => {
     .catch((err) => console.log(err));
 });
 
+
+// update data
+let updatedimg;
+app.put("/upload", upload.single("file"), async (req, res) => {
+  await console.log(req.body);
+  console.log("image url recieved");
+  updatedimg = req.file.filename;
+});
 app.put("/profile/:id", async (req, res) => {
   const id = req.params.id;
   await User.findByIdAndUpdate(
@@ -91,7 +105,7 @@ app.put("/profile/:id", async (req, res) => {
       name: req.body.name,
       Email: req.body.Email,
       Password: req.body.Password,
-      image: imgname,
+      image: updatedimg,
       Linkedin: req.body.Linkedin,
       Github: req.body.Github,
       insta: req.body.insta,
