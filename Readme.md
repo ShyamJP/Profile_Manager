@@ -53,7 +53,7 @@ Start MongoDB server:
 
 Create a .env file in the server directory and add the following configuration Based on .env.example
 
-Run the Application:
+## Run the Application:
 ### Start the server:
 From the 'server' directory
 ```
