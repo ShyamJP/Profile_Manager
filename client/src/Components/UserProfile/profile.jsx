@@ -40,18 +40,8 @@ const Profile = () => {
         <>
             <h1>Profile</h1>
             <button onClick={() => navigate('/login')}>LogOut</button>
-            {/* <div key={id} className='profile_card'>
-                <img src={`/images/${url}`} height={"50px"} width={"50px"} className='img' alt="use profile" />
-                <h1 className='name'>{name}</h1>
-                <p className='email'>{email}</p>
-                <div className='icons'>
-                    <a href={Linkedin} className='icon' style={{ color: "lightblue" }}><h2><i className="fa-brands fa-linkedin" color='blue'></i></h2></a>
-                    <a href={github} className='icon' style={{ color: "black" }}><h2  ><i className="fa-brands fa-github"></i></h2></a>
-                    <a href={insta} className='icon' style={{ color: "pink" }}><h2><i className="fa-brands fa-instagram"></i></h2></a>
-                </div>
-            </div> */}
             <Card data={profileObj} />
-            <button onClick={updateHandler}>Edit</button>
+            {/* <button onClick={updateHandler}>Edit</button> */}
         </>
     )
 }

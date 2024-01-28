@@ -75,7 +75,7 @@ const Form = () =>{
     return(
         <>
 
-            <div className="form-div" onSubmit={handleSubmit}>
+            <div className="form-div" >
                 <form action="" className='form' method='post'>
                     <center><h1>welcome!</h1>
                     <h2>Register now</h2></center>
@@ -194,10 +194,10 @@ const Form = () =>{
                     name='file'
                     onChange={(e)=>setImage(e.target.files[0])}
                     />
-                    <button onClick={handleUploadImg} type='submit'>Register</button>
+                    <button onClick={handleUploadImg} type='button'>Register</button>
                     
 
-                    {/* <button type="submit">Register</button> */}
+                    <button type="submit" onClick={handleSubmit}>Register</button>
                 </form>
             </div>
         </>

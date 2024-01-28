@@ -28,7 +28,6 @@ const upload = multer({ storage: storage });
 // Get image url
 let imgname;
 app.post("/upload", upload.single("file"), async (req, res) => {
-  await console.log(req.body);
   imgname = req.file.filename;
   console.log("image url recieved : " , imgname );
   if(imgname != null){
@@ -52,7 +51,7 @@ app.post("/send", async (req, res) => {
   try {
     await user
       .save()
-      .then((res) => console.log("data recieved"))
+      .then((res) => console.log("data recieved", res))
       .catch((err) => console.log(err));
   } catch (err) {
     console.log(err);
